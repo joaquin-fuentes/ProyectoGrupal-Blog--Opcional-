@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bebas Neue", cursive;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.navbar {
+  background: linear-gradient(to bottom, #17a2b8, #ffffff);
+}
+
+.table {
+  table-layout: fixed;
+}
+
+.img-carousel {
+  height: 600px;
+  object-fit: cover;
+}
+
+.gradiente-celeste {
+  height: 150px; /* Ajustar altura según tus necesidades */
+  background-image: linear-gradient(to bottom, #17a2b8, #ffffff);
+  background-size: auto 100%;
+  background-position: center top; /* Ajustar posición vertical */
+  background-repeat: no-repeat; /* Evitar que se repita */
+  position: relative; /* Permitir que el contenido del footer se muestre debajo */
+  z-index: 2; /* Para que esté por encima del contenido */
+}
