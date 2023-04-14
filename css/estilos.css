@@ -33,3 +33,9 @@ main {
   position: relative; /* Permitir que el contenido del footer se muestre debajo */
   z-index: 2; /* Para que esté por encima del contenido */
 }
+
+
+textarea {
+  resize: none;
+  overflow-y: scroll; /* Muestra una barra de desplazamiento vertical cuando el contenido exceda el tamaño del textarea */
+}
