@@ -23,6 +23,13 @@ main {
   height: 600px;
   object-fit: cover;
 }
+.img-nosotros {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
 .gradiente-celeste {
   height: 150px; /* Ajustar altura según tus necesidades */
@@ -37,5 +44,32 @@ main {
 
 textarea {
   resize: none;
-  overflow-y: scroll; /* Muestra una barra de desplazamiento vertical cuando el contenido exceda el tamaño del textarea */
+  overflow-y: scroll; 
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem; 
+  }
+ 
+  .navbar-nav {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    margin-top: 30px;
+  }
+  .nav-item {
+    margin-bottom: 10px;
+  }
+  .form-control {
+    width: 100%; 
+  }
+  .btn {
+    width: 100%; 
+    margin-top: 10px;
+  }
+}
+
+.sobre-nosotros {
+  font-size: 5.5rem;
 }
