@@ -7,5 +7,5 @@ En este repositorio se encuentra el proyecto grupal del blog, es opcional.
 
 # Instrucciones de uso
  Ingresar al siguiente link para ver repositorio en un servidor web: 
- https://proyectogrupal-blog.netlify.app/
+ https://proyecto-grupal-blog.netlify.app/
 
