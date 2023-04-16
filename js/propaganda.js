@@ -5,5 +5,7 @@ setTimeout(() => {
   propaganda.classList.add("aparece");
 }, 4000);
 
-
-//Ver de arreglar esto para que funcione igual en computadoras con add block
+setTimeout(() => {
+  propaganda.classList.remove("aparece");
+  propaganda.classList.add("desaparece");
+}, 10000);
