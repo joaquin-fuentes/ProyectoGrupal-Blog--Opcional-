@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bebas Neue", cursive;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.navbar {
+  background: linear-gradient(to bottom, #17a2b8, #ffffff);
+}
+
+.table {
+  table-layout: fixed;
+}
+
+.img-carousel {
+  height: 600px;
+  object-fit: cover;
+}
+
+.img-nosotros {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.gradiente-celeste {
+  height: 150px; /* Ajustar altura según tus necesidades */
+  background-image: linear-gradient(to bottom, #17a2b8, #ffffff);
+  background-size: auto 100%;
+  background-position: center top; /* Ajustar posición vertical */
+  background-repeat: no-repeat; /* Evitar que se repita */
+  position: relative; /* Permitir que el contenido del footer se muestre debajo */
+  z-index: 2; /* Para que esté por encima del contenido */
+}
+
+textarea {
+  resize: none;
+  overflow-y: scroll;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .nav-item {
+    margin-bottom: 10px;
+  }
+  .form-control {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.sobre-nosotros {
+  font-size: 5.5rem;
+}
+
+/* Estilo para las imágenes */
+.img-persona {
+  height: 300px;
+  width: auto;
+  border: 5px solid #ccc; /* Borde gris claro */
+  transition: border-color 0.3s ease; /* Efecto de transición suave */
+}
+
+/* Estilo para el hover */
+.img-persona:hover {
+  border-color: #00bfff; /* Borde celeste */
+}
+
+.pDesc {
+  font-size: 20px;
+}
+
+.hr1 {
+  border-color: #10535f;
+}
+.hr2 {
+  border-color: #0494c4;
+}
+.hr3 {
+  border-color: #26c9ff;
+}
+hr {
+  height: 5px;
+  border-width: 10px;
+}
+
+
+#propaganda {
+  position: fixed;
+  top: 110px;
+  left: 30%;
+  z-index: 3;
+}
+
+.desaparece{
+
+  display: none;
+}
+
+.aparece{
+
+  display: block;
+}
