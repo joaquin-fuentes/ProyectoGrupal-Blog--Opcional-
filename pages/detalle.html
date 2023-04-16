@@ -59,15 +59,6 @@
                 >
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Ej: Plan de Dieta"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-dark" type="submit">Buscar</button>
-            </form>
           </div>
         </div>
       </nav>
@@ -276,51 +267,52 @@
             <h6><b>Nombre:</b> Joaquin</h6>
             <h6><b>E-mail:</b> joaquin.fuentes1327@gmail.com</h6>
             <p>
-              <b>Comentario:</b> Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Delectus error ab adipisci eos nesciunt sit
-              accusamus quo molestias, maxime doloribus atque vitae at quod
-              obcaecati blanditiis ipsum mollitia unde aspernatur dolor, quas
-              pariatur dicta ullam nostrum. Eligendi consequatur ea rem iure
-              assumenda pariatur, distinctio corrupti nihil dolores quaerat
-              aspernatur minus tempore est asperiores minima eius laborum quos
-              magni fuga, expedita accusamus omnis consequuntur unde? Fugit
-              earum unde quaerat, assumenda veniam quia! Quibusdam tempore illo
-              sapiente illum animi quisquam, maiores quod vitae ad nam dolor
-              consequatur eos cupiditate voluptatibus eius autem minus
-              accusamus, eum ipsam voluptates repudiandae! Nam, laborum?
-              Doloremque, rem?
+              <b>Comentario:</b> Excelentes planes personalizados para cada persona. Me senti muy a gusto y espero
+              las nuevas actualizaciones para no perderme ningun plan!
             </p>
           </aside>
         </article>
       </section>
+
+      <div id="contenedor-comentarios">
+
+      </div>
+
       <section class="container">
-        <form class="row g-3 my-4">
+        <form class="row g-3 my-4" id="elFormulario">
           <div class="col-md-6">
-            <label for="" class="form-label">Nombre</label>
+            <label for="" class="form-label">Nombre *</label>
             <input
               type="nombre"
               class="form-control border-info-subtle"
-              id=""
+              id="nombre"
+              minlength="4"
+              maxlength="50"
               placeholder="Ingrese aquí su nombre"
+              required
             />
           </div>
           <div class="col-md-6">
-            <label for="" class="form-label">E-mail</label>
+            <label for="" class="form-label">E-mail *</label>
             <input
               type="email"
               class="form-control border-info-subtle"
-              id=""
+              id="email"
+              maxlength="50"
               placeholder="Ingrese aquí su direccion de correo electrónico"
+              required
             />
           </div>
           <div class="col-12">
-            <label for="" class="form-label">Comentario</label>
+            <label for="" class="form-label">Comentario *</label>
             <textarea
-              name=""
-              id=""
+              name="comentario"
+              id="comentario"
               class="form-control border-info-subtle"
+              minlength="5"
               maxlength="100"
               placeholder="Ingrese aquí su comentario"
+              required
             ></textarea>
           </div>
 
@@ -339,22 +331,6 @@
           width="50%"
         />
       </div>
-      <!-- AGREGO AQUI LA FUNCION PUBLICIDAD PORQUE SINO EL ADD BLOCK DE LA COMPUTADORA LO BLOQUEA -->
-      <script>
-        let propaganda = document.getElementById("propaganda");
-
-        setTimeout(() => {
-          propaganda.classList.remove("desaparece");
-          propaganda.classList.add("aparece");
-        }, 4000);
-
-        setTimeout(() => {
-          propaganda.classList.remove("aparece");
-          propaganda.classList.add("desaparece");
-        }, 10000);
-
-      </script>
-
     </main>
     <section>
       <div class="gradiente-celeste text-center py-4">
@@ -373,7 +349,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/app.js"></script>
-    <script src="../js/publicidad.js"></script>
+    <script src="../js/propaganda.js"></script>
+    <script src="../js/comentario.js"></script>
   </body>
 </html>
